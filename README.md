@@ -10,7 +10,7 @@ Library Extending과 관련한 내용은 [링크](http://www.ciboard.co.kr/user_
 1. Codeigniter 3.x버전을 설치합니다.
 2. `/application/config/config.php`파일에서 아래와 같은 정보를 수정해줍니다.
     * line 139. $config['composer_autoload'] = 'false'; => $config['composer_autoload'] = './vendor/autoload.php';
-3. composer를 사용해서 sentry를 설치해줍니다.
+3. composer를 사용해서 mailgun을 설치해줍니다.(필요한 여러가지 라이브러리를 같이 설치해주세요)
     `composer require mailgun/mailgun-php php-http/curl-client guzzlehttp/psr7`
 4. `/application/libraries/MY_Email.php` 파일을 당신의 `/application/libraries/`폴더에 복사해주세요.
 5. 설정값을 변경합니다.
